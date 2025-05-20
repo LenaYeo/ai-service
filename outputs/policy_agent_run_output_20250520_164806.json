@@ -1,0 +1,101 @@
+{
+  "policies": [
+    {
+      "title": "Degradation Measurement of Robot Arm Position Accuracy",
+      "region": "USA",
+      "source": "Data.gov",
+      "published_date": "2021-03-11",
+      "url": null,
+      "summary": "The dataset contains both the robot's high-level tool center position (TCP) health data and controller-level components' information (i.e., joint positions, velocities, currents, temperatures, currents). The datasets can be used by users (e.g., software developers, data scientists) who work on robot health management (including accuracy) but have limited or no access to robots that can capture real data. The datasets can support the:\n\n- Development of robot health monitoring algorithms and tools\n- Research of technologies and tools to support robot monitoring, diagnostics, prognostics, and health management (collectively called PHM)\n- Validation and verification of the industrial PHM implementation. For example, the verification of a robot's TCP accuracy after the work cell has been reconfigured, or whenever a manufacturer wants to determine if the robot arm has experienced a degradation.\n\nFor data collection, a trajectory is programmed for the Universal Robot (UR5) approaching and stopping at randomly-selected locations in its workspace. The robot moves along this preprogrammed trajectory during different conditions of temperature, payload, and speed. The TCP (x,y,z) of the robot are measured by a 7-D measurement system developed at NIST. Differences are calculated between the measured positions from the 7-D measurement system and the nominal positions calculated by the nominal robot kinematic parameters. The results are recorded within the dataset. Controller level sensing data are also collected from each joint (direct output from the controller of the UR5), to understand the influences of position degradation from temperature, payload, and speed. Controller-level data can be used for the root cause analysis of the robot performance degradation, by providing joint positions, velocities, currents, accelerations, torques, and temperatures. For example, the cold-start temperatures of the six joints were approximately 25 degrees Celsius. After two hours of operation, the joint temperatures increased to approximately 35 degrees Celsius. Control variables are listed in the header file in the data set (UR5TestResult_header.xlsx). \n\nIf you'd like to comment on this data and/or offer recommendations on future datasets, please email guixiu.qiao@nist.gov.",
+      "policy_type": "정책 데이터",
+      "search_keyword": "robotic"
+    },
+    {
+      "title": "Annotated fish imagery data for individual and species recognition with deep learning",
+      "region": "USA",
+      "source": "Data.gov",
+      "published_date": "2023-06-01",
+      "url": null,
+      "summary": "We provide annotated fish imagery data for use in deep learning models (e.g., convolutional neural networks) for individual and species recognition. For individual recognition models, the dataset consists of annotated .json files of individual brook trout imagery collected at the Eastern Ecological Science Center's Experimental Stream Laboratory. For species recognition models, the dataset consists of annotated .json files for 7 freshwater fish species: lake trout, largemouth bass, smallmouth bass, brook trout, rainbow trout, walleye, and northern pike. Species imagery was compiled from Anglers Atlas and modified to remove human faces for privacy protection. We used open-source VGG image annotation software developed by Oxford University: https://www.robots.ox.ac.uk/~vgg/software/via/via-1.0.6.html.",
+      "policy_type": "정책 데이터",
+      "search_keyword": "robotic"
+    },
+    {
+      "title": "Autonomous Vehicle Survey of Bicyclists and Pedestrians in Pittsburgh",
+      "region": "USA",
+      "source": "Data.gov",
+      "published_date": "2023-01-24",
+      "url": null,
+      "summary": "In Pittsburgh, Autonomous Vehicle (AV) companies have been testing autonomous vehicles since September 2016. However, the tech is new, and there have been some high-profile behavior that we believe warrants a larger conversation. So in early 2017, we set out to design a survey to see both how BikePGH donor-members, and Pittsburgh residents at large, feel about about sharing the road with AVs as a bicyclist and/or as a pedestrian. Our survey asked participants how they feel about being a fellow road user with AVs, either walking or biking. We also wanted to collect stories about people’s experiences interacting with this nascent technology. We are unaware of any public surveys about people’s feelings or understanding of this new technology.\r\nWe hope that our results will help add to the body of data and help the public and politicians understand the complexity of possible futures that different economic models AV technology can bring to our cities and towncenters.\r\n\r\nWe conducted our 2017 survey in two parts. First, we launched the survey exclusively to donor-members, yielding 321 responses (out of 2,900) via email. Once we closed the survey, we launched it again, but allowed the general public to take it. Through promoting it on our website, social media channels, and a few news articles, we yielded 798 responses (mostly from people in the Pittsburgh region), for a combined total of 1,119 responses.\r\n\r\nRegarding the 2019 survey: In total, 795 people responded. BikePGH solicited responses from their blog, website, and email list. There were also a few local news articles about the survey. While many questions were kept similar to the 2017 survey, BikePGH wanted to dig a bit deeper into regulations as well as demographics this time around.\r\n\r\nThe 2019 follow up survey also aims to see how the landscape has changed, and how specifically, Pittsburghers on bike and on foot feel about sharing the road with AVs so that we’re all better prepared to deal with this new reality and help make sure that it is introduced as safely as humanly possible.",
+      "policy_type": "정책 데이터",
+      "search_keyword": "robotic"
+    },
+    {
+      "title": "Performance data of a robotic system with a robotic hand and a robotic gripper completing a peg-in-hole assembly task",
+      "region": "USA",
+      "source": "Data.gov",
+      "published_date": "2021-03-11",
+      "url": null,
+      "summary": "NIST is developing metrics and test methods to benchmark the performance of robotic systems when performing manufacturing tasks. The ability to perform simple insertions is critical for robotic systems in manufacturing. A simple peg-in-hole test was designed to measure a robotic system's capability for performing these simple insertions. The dataset captures the performance metrics of a robotic system outfitted with a robotic hand and a robotic gripper to study the effect of next-generation robotic hand technology versus conventional parallel gripper technologies.",
+      "policy_type": "정책 데이터",
+      "search_keyword": "robotic"
+    },
+    {
+      "title": "Process and robot data from a two robot workcell representative performing representative manufacturing operations.",
+      "region": "USA",
+      "source": "Data.gov",
+      "published_date": "2021-04-10",
+      "url": null,
+      "summary": "This data set is captured from a robot workcell that is performing activities representative of several manufacturing operations. The workcell contains two, 6-degree-of-freedom robot manipulators where one robot is performing material handling operations (e.g., transport parts into and out of a specific work space) while the other robot is performing a simulated precision operation (e.g., the robot touching the center of a part with a tool tip that leaves a mark on the part). This precision operation is intended to represent a precise manufacturing operation (e.g., welding, machining). The goal of this data set is to provide robot level and process level measurements of the workcell operating in nominal parameters. There are no known equipment or process degradations in the workcell.  The material handling robot will perform pick and place operations, including moving simulated parts from an input area to in-process work fixtures. Once parts are placed in/on the work fixtures, the second robot will interact with the part in a specified precise manner. In this specific instance, the second robot has a pen mounted to its tool flange and is drawing the NIST logo on a surface of the part. When the precision operation is completed, the material handling robot will then move the completed part to an output. This suite of data includes process data and performance data, including timestamps. Timestamps are recorded at predefined state changes and events on the PLC and robot controllers, respectively. Each robot controller and the PLC have their own internal clocks and, due to hardware limitations, the timestamps recorded on each device are relative to their own internal clocks. All timestamp data collected on the PLC is available for real-time calculations and is recorded. The timestamps collected on the robots are only available as recorded data for post-processing and analysis. The timestamps collected on the PLC correspond to 14 part state changes throughout the processing of a part. Timestamps are recorded when PLC-monitored triggers are activated by internal processing (PLC trigger origin) or after the PLC receives an input from a robot controller (robot trigger origin). Records generated from PLC-originated triggers include parts entering the work cell, assignment of robot tasks, and parts leaving the work cell. PLC-originating triggers are activated by either internal algorithms or sensors which are monitored directly in the PLC Inputs/Outputs (I/O). Records generated from a robot-originated trigger include when a robot begins operating on a part, when the task operation is complete, and when the robot has physically cleared the fixture area and is ready for a new task assignment. Robot-originating triggers are activated by PLC I/O. Process data collected in the workcell are the variable pieces of process information. This includes the input location (single option in the initial configuration presented in this paper), the output location (single option in the initial configuration presented in this paper), the work fixture location, the part number counted from startup, and the part type (task number for drawing robot).  Additional information on the context of the workcell operations and the captured data can be found in the attached files, which includes a README.txt, along with several noted publications. Disclaimer: Certain commercial entities, equipment, or materials may be identified or referenced in this data, or its supporting materials, in order to illustrate a point or concept. Such identification or reference is not intended to imply recommendation or endorsement by NIST; nor does it imply that the entities, materials, equipment or data are necessarily the best available for the purpose. The user assumes any and all risk arising from use of this dataset.",
+      "policy_type": "정책 데이터",
+      "search_keyword": "robotic"
+    }
+  ],
+  "metrics": {
+    "total_policies": 5,
+    "policies_by_region": {
+      "USA": 5
+    },
+    "policy_timeline": {
+      "2021": 3,
+      "2023": 2
+    },
+    "focus_analysis": {
+      "key_technologies": [
+        "로봇 제어 시스템",
+        "딥 러닝 모델",
+        "자율주행 차량 기술",
+        "로봇 손과 그리퍼 기술"
+      ],
+      "policy_focus": [
+        "로봇 건강 관리",
+        "자율주행 기술과 도로 공유",
+        "로봇 성능 벤치마크",
+        "산업 자동화"
+      ],
+      "budget_info": {
+        "mentioned": false,
+        "details": "데이터 없음",
+        "amount_scale": "언급 없음",
+        "timeline": "데이터 없음"
+      },
+      "timeframe": "정책 시행 기간/일정 데이터 없음",
+      "regulatory_aspects": [
+        "도로 규제와 안전성",
+        "산업 자동화에 대한 규정"
+      ],
+      "stakeholders": [
+        "소프트웨어 개발자",
+        "데이터 과학자",
+        "자율주행 차량 기업",
+        "제조업체"
+      ],
+      "international_context": "국제적 맥락 데이터 없음",
+      "potential_impact": "로봇 기술 발전과 자율주행 차량의 도로 안전성 향상 가능성"
+    }
+  },
+  "collection_date": "2025-05-20T16:48:06.111129",
+  "keywords_analyzed": [
+    "robotic"
+  ]
+}

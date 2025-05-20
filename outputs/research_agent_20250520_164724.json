@@ -1,0 +1,93 @@
+{
+  "papers": [
+    {
+      "title": "GraspMolmo: Generalizable Task-Oriented Grasping via Large-Scale Synthetic Data Generation",
+      "authors": [
+        "Abhay Deshpande",
+        "Yuquan Deng",
+        "Arijit Ray",
+        "Jordi Salvador",
+        "Winson Han",
+        "Jiafei Duan",
+        "Kuo-Hao Zeng",
+        "Yuke Zhu",
+        "Ranjay Krishna",
+        "Rose Hendrix"
+      ],
+      "published": "2025-05-19T17:59:06+00:00",
+      "original_abstract": "We present GrasMolmo, a generalizable open-vocabulary task-oriented grasping\n(TOG) model. GraspMolmo predicts semantically appropriate, stable grasps\nconditioned on a natural language instruction and a single RGB-D frame. For\ninstance, given \"pour me some tea\", GraspMolmo selects a grasp on a teapot\nhandle rather than its body. Unlike prior TOG methods, which are limited by\nsmall datasets, simplistic language, and uncluttered scenes, GraspMolmo learns\nfrom PRISM, a novel large-scale synthetic dataset of 379k samples featuring\ncluttered environments and diverse, realistic task descriptions. We fine-tune\nthe Molmo visual-language model on this data, enabling GraspMolmo to generalize\nto novel open-vocabulary instructions and objects. In challenging real-world\nevaluations, GraspMolmo achieves state-of-the-art results, with a 70%\nprediction success on complex tasks, compared to the 35% achieved by the next\nbest alternative. GraspMolmo also successfully demonstrates the ability to\npredict semantically correct bimanual grasps zero-shot. We release our\nsynthetic dataset, code, model, and benchmarks to accelerate research in\ntask-semantic robotic manipulation, which, along with videos, are available at\nhttps://abhaybd.github.io/GraspMolmo/.",
+      "summary": "이 연구는 GraspMolmo라는 일반화 가능한 작업 지향 그립 모델을 제안합니다. GraspMolmo는 자연어 명령어와 단일 RGB-D 프레임을 기반으로 의미적으로 적절하고 안정적인 그립을 예측하며, 379,000개의 샘플을 포함한 PRISM이라는 대규모 합성 데이터셋에서 학습합니다. 기존 방법들과 달리, GraspMolmo는 복잡한 작업에 대해 70%의 예측 성공률을 달성하여 최첨단 결과를 나타내며, 제로샷으로 의미적으로 올바른 양손 그립을 예측하는 능력을 입증했습니다. 이 연구팀은 합성 데이터셋, 코드, 모델, 벤치마크를 공개하여 작업-의미 로봇 조작 연구의 발전을 촉진하고자 합니다.",
+      "arxiv_id": "2505.13441v1",
+      "url": "https://arxiv.org/abs/2505.13441v1"
+    },
+    {
+      "title": "A Practical Guide for Incorporating Symmetry in Diffusion Policy",
+      "authors": [
+        "Dian Wang",
+        "Boce Hu",
+        "Shuran Song",
+        "Robin Walters",
+        "Robert Platt"
+      ],
+      "published": "2025-05-19T17:55:28+00:00",
+      "original_abstract": "Recently, equivariant neural networks for policy learning have shown\npromising improvements in sample efficiency and generalization, however, their\nwide adoption faces substantial barriers due to implementation complexity.\nEquivariant architectures typically require specialized mathematical\nformulations and custom network design, posing significant challenges when\nintegrating with modern policy frameworks like diffusion-based models. In this\npaper, we explore a number of straightforward and practical approaches to\nincorporate symmetry benefits into diffusion policies without the overhead of\nfull equivariant designs. Specifically, we investigate (i) invariant\nrepresentations via relative trajectory actions and eye-in-hand perception,\n(ii) integrating equivariant vision encoders, and (iii) symmetric feature\nextraction with pretrained encoders using Frame Averaging. We first prove that\ncombining eye-in-hand perception with relative or delta action parameterization\nyields inherent SE(3)-invariance, thus improving policy generalization. We then\nperform a systematic experimental study on those design choices for integrating\nsymmetry in diffusion policies, and conclude that an invariant representation\nwith equivariant feature extraction significantly improves the policy\nperformance. Our method achieves performance on par with or exceeding fully\nequivariant architectures while greatly simplifying implementation.",
+      "summary": "이 연구는 확산 정책에 대칭성을 통합하는 실용적인 접근 방안을 모색합니다. 연구자들은 완전한 등가 설계를 필요로 하지 않으면서도 대칭의 이점을 활용하기 위해 상대적 경로 행동과 눈 안의 인식을 통한 불변 표현, 등가 비전 인코더 통합, 그리고 프레임 평균화를 이용한 대칭적 특징 추출 방법을 조사합니다. 실험 결과, 이러한 접근법을 통해 정책 일반화가 향상되며, 제안된 방법이 완전한 등가 구조에 필적하거나 이를 초 surpass하는 성능을 보여주면서 구현이 크게 단순화됨을 입증했습니다.",
+      "arxiv_id": "2505.13431v1",
+      "url": "https://arxiv.org/abs/2505.13431v1"
+    },
+    {
+      "title": "Seeing, Saying, Solving: An LLM-to-TL Framework for Cooperative Robots",
+      "authors": [
+        "Dan BW Choe",
+        "Sundhar Vinodh Sangeetha",
+        "Steven Emanuel",
+        "Chih-Yuan Chiu",
+        "Samuel Coogan",
+        "Shreyas Kousik"
+      ],
+      "published": "2025-05-19T17:19:43+00:00",
+      "original_abstract": "Increased robot deployment, such as in warehousing, has revealed a need for\nseamless collaboration among heterogeneous robot teams to resolve unforeseen\nconflicts. To address this challenge, we propose a novel, decentralized\nframework for robots to request and provide help. The framework begins with\nrobots detecting conflicts using a Vision Language Model (VLM), then reasoning\nover whether help is needed. If so, it crafts and broadcasts a natural language\n(NL) help request using a Large Language Model (LLM). Potential helper robots\nreason over the request and offer help (if able), along with information about\nimpact to their current tasks. Helper reasoning is implemented via an LLM\ngrounded in Signal Temporal Logic (STL) using a Backus-Naur Form (BNF) grammar\nto guarantee syntactically valid NL-to-STL translations, which are then solved\nas a Mixed Integer Linear Program (MILP). Finally, the requester robot chooses\na helper by reasoning over impact on the overall system. We evaluate our system\nvia experiments considering different strategies for choosing a helper, and\nfind that a requester robot can minimize overall time impact on the system by\nconsidering multiple help offers versus simple heuristics (e.g., selecting the\nnearest robot to help).",
+      "summary": "이 연구는 다양한 로봇 팀 간의 협업을 개선하기 위한 분산 프레임워크를 제안합니다. 로봇들은 비전 언어 모델(VLM)을 사용해 갈등을 감지하고, 필요시 대규모 언어 모델(LLM)을 통해 자연어 도움 요청을 생성하여 방송합니다. 잠재적인 도움 제공 로봇은 STL 기반 LLM을 통해 요청에 대한 판단을 하고 지원을 제안하며, 요청자는 시스템의 전체 시간 영향을 최소화하기 위해 여러 도움 제안을 고려하여 도움 로봇을 선택합니다. 실험 결과, 요청자가 단순한 휴리스틱 대신 다양한 도움 제안을 고려함으로써 시스템의 전체 시간 영향을 최소화할 수 있음을 발견했습니다.",
+      "arxiv_id": "2505.13376v1",
+      "url": "https://arxiv.org/abs/2505.13376v1"
+    },
+    {
+      "title": "Approximating Global Contact-Implicit MPC via Sampling and Local Complementarity",
+      "authors": [
+        "Sharanya Venkatesh",
+        "Bibit Bianchini",
+        "Alp Aydinoglu",
+        "William Yang",
+        "Michael Posa"
+      ],
+      "published": "2025-05-19T16:52:53+00:00",
+      "original_abstract": "To achieve general-purpose dexterous manipulation, robots must rapidly devise\nand execute contact-rich behaviors. Existing model-based controllers are\nincapable of globally optimizing in real-time over the exponential number of\npossible contact sequences. Instead, recent progress in contact-implicit\ncontrol has leveraged simpler models that, while still hybrid, make local\napproximations. However, the use of local models inherently limits the\ncontroller to only exploit nearby interactions, potentially requiring\nintervention to richly explore the space of possible contacts. We present a\nnovel approach which leverages the strengths of local complementarity-based\ncontrol in combination with low-dimensional, but global, sampling of possible\nend-effector locations. Our key insight is to consider a contact-free stage\npreceding a contact-rich stage at every control loop. Our algorithm, in\nparallel, samples end effector locations to which the contact-free stage can\nmove the robot, then considers the cost predicted by contact-rich MPC local to\neach sampled location. The result is a globally-informed, contact-implicit\ncontroller capable of real-time dexterous manipulation. We demonstrate our\ncontroller on precise, non-prehensile manipulation of non-convex objects using\na Franka Panda arm. Project page: https://approximating-global-ci-mpc.github.io",
+      "summary": "이 연구는 로봇이 복잡한 접촉 행동을 신속하게 개발하고 실행할 수 있도록 하는 글로벌 연락-암시적 모델 예측 제어(MPC) 방법을 제안합니다. 기존의 모델 기반 제어기가 실시간으로 가능한 모든 접촉 순서를 최적화할 수 없는 한계를 극복하기 위해, 저자들은 저차원 샘플링을 통해 로봇의 말단 조작 위치를 고려하고, 이에 따라 각 위치 주변의 접촉-풍부한 MPC 비용을 평가하는 새로운 접근 방식을 개발했습니다. 실험 결과, 이 방법은 비열림 접촉의 정밀한 조작에서 효과성을 보여주어, 실시간으로 뛰어난 조작능력을 가지는 로봇 제어기를 구현하는 데 성공했습니다.",
+      "arxiv_id": "2505.13350v1",
+      "url": "https://arxiv.org/abs/2505.13350v1"
+    },
+    {
+      "title": "OPA-Pack: Object-Property-Aware Robotic Bin Packing",
+      "authors": [
+        "Jia-Hui Pan",
+        "Yeok Tatt Cheah",
+        "Zhengzhe Liu",
+        "Ka-Hei Hui",
+        "Xiaojie Gao",
+        "Pheng-Ann Heng",
+        "Yun-Hui Liu",
+        "Chi-Wing Fu"
+      ],
+      "published": "2025-05-19T16:48:14+00:00",
+      "original_abstract": "Robotic bin packing aids in a wide range of real-world scenarios such as\ne-commerce and warehouses. Yet, existing works focus mainly on considering the\nshape of objects to optimize packing compactness and neglect object properties\nsuch as fragility, edibility, and chemistry that humans typically consider when\npacking objects. This paper presents OPA-Pack (Object-Property-Aware Packing\nframework), the first framework that equips the robot with object property\nconsiderations in planning the object packing. Technical-wise, we develop a\nnovel object property recognition scheme with retrieval-augmented generation\nand chain-of-thought reasoning, and build a dataset with object property\nannotations for 1,032 everyday objects. Also, we formulate OPA-Net, aiming to\njointly separate incompatible object pairs and reduce pressure on fragile\nobjects, while compacting the packing. Further, OPA-Net consists of a property\nembedding layer to encode the property of candidate objects to be packed,\ntogether with a fragility heightmap and an avoidance heightmap to keep track of\nthe packed objects. Then, we design a reward function and adopt a deep\nQ-learning scheme to train OPA-Net. Experimental results manifest that OPA-Pack\ngreatly improves the accuracy of separating incompatible object pairs (from 52%\nto 95%) and largely reduces pressure on fragile objects (by 29.4%), while\nmaintaining good packing compactness. Besides, we demonstrate the effectiveness\nof OPA-Pack on a real packing platform, showcasing its practicality in\nreal-world scenarios.",
+      "summary": "이 연구는 OPA-Pack(객체-속성 인식 로봇 포장 프레임워크)을 제안하여 로봇이 포장 시 객체의 속성(예: 취약성, 식품성, 화학성)을 고려하도록 구현하였습니다. 이를 위해 객체 속성 인식 기법과 OPA-Net을 개발하여 서로 호환되지 않는 객체 쌍을 분리하고 취약 객체에 대한 압력을 줄이면서 포장 밀도를 향상시켰습니다. 실험 결과, OPA-Pack은 호환성 분리 정확도를 52%에서 95%로 개선하고, 취약 객체에 대한 압력을 29.4% 감소시키면서도 우수한 포장 밀도를 유지하는 성과를 보여주었습니다. 이 연구는 실제 포장 플랫폼에서의 효과성도 입증하여 현실 세계에서의 실용성을 강조합니다.",
+      "arxiv_id": "2505.13339v1",
+      "url": "https://arxiv.org/abs/2505.13339v1"
+    }
+  ],
+  "collection_date": "2025-05-20T16:47:24.847824",
+  "keywords_analyzed": [
+    "robotic"
+  ],
+  "total_papers": 5
+}
