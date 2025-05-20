@@ -100,8 +100,8 @@
 ```
 
 ## Contributer
-- 여다건 : Prompt Engineering, Agent Design
-   - 느낀점: 
+- 여다건 : Prompt Engineering, Agent Design  
+- 느낀점: 
    Agent 역할에 대해서 설계를 시작하고 진행하였음에도 구현시 계획에 맞게 진행하지 않아 AgentState가 명확하지 않는 마무리를 하게 되었습니다.
    "Data 수집 -> 요약 -> 트렌드 예측 -> 위험 및 기회요소 평가 -> 보고서 생성" 단계로 계획하였으나, 세부 Agent 에서 역할이 혼재됨과 수집된 자료의 전달로 인해 검증 단계를 추가했음에도 불구하고 신뢰성을 보장한 최종 보고서 생성이 어려웠습니다. 
    이후에는 각 Agent 역할과 State를 명확히 하고, 이를 구현에 반영하고자 합니다.
